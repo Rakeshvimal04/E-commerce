@@ -1,122 +1,144 @@
-.navbar{
-    background-color: #222831;
-    color: white;
-}
-.logoname{
-    font-family: "Fascinate Inline", system-ui;
-    font-weight: 400;
-    font-style: normal;
+.navbar {
+  background-color: #222831;
+  color: white;
 }
 
- p:hover {
-        color: #ffee10;
-        /* box-shadow: 0 0 20px #ffee10; */
-        text-shadow: 0 0 5px #ffee10;
+.logoname {
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p:hover {
+  /* color: #ffee10; */
+  /* box-shadow: 0 0 20px #ffee10; */
+  /* text-shadow: 0 0 5px #ffee10;
         cursor: pointer;
-        border-bottom: 1px solid #ffee10;
-      }
+        border-bottom: 1px solid #ffee10; */
+}
 
 
 
-      .carousel {
-        height: 600px;
-        width: 100%;
-      }
-      
-      .carousel_wrapper {
-        position: relative;
-        width: 100%;
-        height: 100%;
-      }
-      
-      .carousel_card {
-        display: flex;
-        flex: 1;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        border-radius: 20px;
-        -webkit-box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.15);
-        box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.15);
-        opacity: 0;
-        pointer-events: none;
-        transform: scale(0.8);
-        transition: 0.5s ease-in-out;
-      }
-      
-      .carousel_card-active {
-        opacity: 1;
-        transform: scale(1);
-        pointer-events: visible;
-      }
-      
-      .card_image {
-        width: 100%;
-        object-fit: cover;
-      }
-      
-      .card_overlay {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        /* background-color: rgba(0, 0, 0, 0.5); */
-        display: flex;
-        padding: 40px 30px;
-        align-items: flex-end;
-      }
-      
-      .card_title {
-        color: white;
-        font-size: 30px;
-      }
-      
-      .carousel_arrow_left,
-      .carousel_arrow_right {
-        position: absolute;
-        font-size: 40px;
-        top: 50%;
-        transform: translate(0, -50%);
-        background-color: gainsboro;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        padding-bottom: 7px;
-        cursor: pointer;
-      }
-      
-      .carousel_arrow_left {
-        left: 15px;
-      }
-      
-      .carousel_arrow_right {
-        right: 15px;
-      }
-      
-      .carousel_pagination {
-        position: absolute;
-        bottom: 5px;
-        left: 50%;
-        transform: translate(-50%, 0);
-      }
-      
-      .pagination_dot {
-        height: 10px;
-        width: 10px;
-        background-color: #f5f5f5;
-        border-radius: 50%;
-        display: inline-block;
-        margin-left: 10px;
-        cursor: pointer;
-      }
-      
-      .pagination_dot:hover {
-        transform: scale(1.2);
-      }
-      
-      .pagination_dot-active {
-        background-color: steelblue;
-      }
+.carousel {
+  height: 600px;
+  width: 100%;
+}
+
+.carousel_wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel_card {
+  display: flex;
+  flex: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.8);
+  transition: 0.5s ease-in-out;
+}
+
+.carousel_card-active {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: visible;
+}
+
+.card_image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  display: flex;
+  padding: 40px 30px;
+  align-items: flex-end;
+}
+
+.card_title {
+  color: white;
+  font-size: 30px;
+}
+
+.carousel_arrow_left,
+.carousel_arrow_right {
+  position: absolute;
+  font-size: 40px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding-bottom: 7px;
+  cursor: pointer;
+}
+
+.carousel_arrow_left {
+  left: 15px;
+}
+
+.carousel_arrow_right {
+  right: 15px;
+}
+
+.carousel_pagination {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.pagination_dot {
+  height: 10px;
+  width: 10px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.pagination_dot:hover {
+  transform: scale(1.2);
+}
+
+.pagination_dot-active {
+  background-color: steelblue;
+}
+
+.product-image {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  margin: 15px;
+  text-align: center;
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 13px rgba(0, 0, 0, 0.555), 0 12px 40px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
