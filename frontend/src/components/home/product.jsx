@@ -1,10 +1,10 @@
 import React from 'react';
-import product1 from '../assets/category1.jpg';
-import product2 from '../assets/category.jpg';
-import product3 from '../assets/pwood.jpg';
-import product4 from '../assets/ewood.jpg';
-import product5 from '../assets/special.jpg';
-import './style.css'
+import product1 from '../../assets/category1.jpg';
+import product2 from '../../assets/category.jpg';
+import product3 from '../../assets/pwood.jpg';
+import product4 from '../../assets/ewood.jpg';
+import product5 from '../../assets/special.jpg';
+import '../style.css'
 
 
 const Product = () => {

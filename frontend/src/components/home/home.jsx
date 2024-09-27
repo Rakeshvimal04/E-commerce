@@ -1,11 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
-import logo from '../assets/logo.png';
-import './style.css';
-import img1 from '../assets/ipl_homepage.jpg';
-import img2 from '../assets/new-banner1.jpg';
-import img3 from '../assets/new-banner.jpg';
-import img4 from '../assets/new-banner2.jpg';
-import img5 from '../assets/new-banner3.jpg'
+import '../style.css';
+import img1 from '../../assets/ipl_homepage.jpg';
+import img2 from '../../assets/new-banner1.jpg';
+import img3 from '../../assets/new-banner.jpg';
+import img4 from '../../assets/new-banner2.jpg';
+import img5 from '../../assets/new-banner3.jpg'
 
 function Home() {
   let [name, setName] = useState("");
@@ -48,18 +47,7 @@ function Home() {
   console.log(current);
   return (
     <>
-      <div className='row navbar d-flex '>
-        <div className='col-2 '>
-          <img src={logo} className='w-50 m-2 ' />
-        </div>
-        <div className='d-flex d-flex col '>
-          <p className='col-1'> Home   </p>
-          <p className='col-1'> About  </p>
-          <p className="col-1"> Product</p>
-          <p className='col-1'> Contact</p>
-          <p className='col-1'> About  </p>
-        </div>
-      </div>
+   
       <div className="carousel d-flex mt-3"
         onMouseEnter={() => {
           setAutoPlay(false);
@@ -108,10 +96,12 @@ function Home() {
       </div>
 
       <div>
-        <h1 className='mt-3 '>Looking to paint your home? Ask for....</h1>
+        <h1 className='mt-3 text-center '>Looking to paint your home? Ask for....</h1>
         <div className='d-flex justify-content-center '>
-          <div className=' border  m-5'><a>Free Sample</a> </div>
-          <div className='  border m-5'><a>Paint Review</a></div>
+          {/* <div className=' border  m-5'><a>Free Sample</a> </div>
+          <div className='  border m-5'><a>Paint Review</a></div> */}
+            <div class="btn1 btn-4 mx-5">Free Sample</div>
+            <div class="btn1 btn-4 mx-5">Paint Review</div>
         </div>
       </div>
     </>

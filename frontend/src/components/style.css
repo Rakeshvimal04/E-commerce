@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
   background-color: #222831;
   color: white;
 }
@@ -7,7 +7,7 @@
   font-family: "Fascinate Inline", system-ui;
   font-weight: 400;
   font-style: normal;
-}
+} */
 
 p:hover {
   /* color: #ffee10; */
@@ -16,6 +16,130 @@ p:hover {
         cursor: pointer;
         border-bottom: 1px solid #ffee10; */
 }
+
+/* nav bar------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+.navbar-left .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-center .nav-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-center .nav-links li {
+  margin-right: 1rem;
+}
+
+.navbar-center .nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right .cart-icon,
+.navbar-right .user-icon {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+  position: relative;
+}
+
+.navbar-right .cart-count {
+  background-color: #f44336;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+}
+
+
+.btn1 {
+  font-family: Arial;
+  font-weight: 500;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 18px 50px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  &:after {
+    content: "";
+    position: absolute;
+  }
+}
+
+
+.btn-4 {
+  color: #0e0e16;
+  border: 2px solid #0e0e16;
+  &:after {
+    border: solid #0e0e16;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-45deg) translateY(-48%);
+    top: 48%;
+    right: 25%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+  }
+  &:hover {
+    border: 2px solid transparent;
+    padding: 18px 62px;
+    &:after {
+      opacity: 1;
+      visibility: visible;
+      right: 15%;
+    }
+  }
+}
+
+.product-image {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  margin: 15px;
+  text-align: center;
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 13px rgba(0, 0, 0, 0.555), 0 12px 40px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+
+
+
 
 
 
@@ -122,23 +246,25 @@ p:hover {
   background-color: steelblue;
 }
 
-.product-image {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+
+/* footer--------------------------------------------------------------- */
+
+
+.footer{
+  background-color: #333;
+  background-repeat: no-repeat;
+  color: white;
+}
+.foosite{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.foosite>li {
+  width: 250px;
+}
+.Aboutcom ,a{
+  text-decoration: none;
+  color: white;
 
 }
-
-.product-card {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding: 20px;
-  margin: 15px;
-  text-align: center;
-}
-
-.product-card:hover {
-  box-shadow: 0 8px 13px rgba(0, 0, 0, 0.555), 0 12px 40px rgba(0, 0, 0, 0.2);
-  transform: translateY(-5px);
-}
-
