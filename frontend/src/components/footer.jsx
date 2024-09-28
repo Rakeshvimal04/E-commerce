@@ -53,7 +53,7 @@ return(
             </li>
         </ul>
         <div className="copyrights clearfix">
-            <p className='text-center mt-5'>©2024 MRF Vapocure Paints - All rights reserved</p>
+            {/* <p className='text-center mt-5'>©2024 MRF Vapocure Paints - All rights reserved</p> */}
         </div>
     </div>
 </div>

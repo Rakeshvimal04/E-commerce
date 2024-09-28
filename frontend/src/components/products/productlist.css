@@ -1,0 +1,24 @@
+.magiccolorbg{
+    background-image: url('./images/product-newbg_0ae32.jpg');
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    color: white;
+    padding-top:80px ;
+}
+
+.p-list1{
+    /* width: 100%; */
+    margin-left: 50px;
+}
+
+.plist-img{
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    margin: 35px;
+}
+
+.productdetails{
+    background-color: #3d53a3  !important;
+}
