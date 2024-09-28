@@ -5,6 +5,7 @@ import img2 from '../../assets/new-banner1.jpg';
 import img3 from '../../assets/new-banner.jpg';
 import img4 from '../../assets/new-banner2.jpg';
 import img5 from '../../assets/new-banner3.jpg'
+import Product from './product';
 
 function Home() {
   let [name, setName] = useState("");
@@ -104,6 +105,7 @@ function Home() {
             <div class="btn1 btn-4 mx-5 mt-5">Paint Review</div>
         </div>
       </div>
+      <Product/>
     </>
   )
 

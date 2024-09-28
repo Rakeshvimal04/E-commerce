@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../assets/logo.png'
 import './style.css'
-function Header() {
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';function Header() {
   return (
     // <div>
     //      <div className='row navbar d-flex '>
@@ -40,10 +40,10 @@ function Header() {
   <div className="navbar-center">
     <ul className="nav-links">
       <li>
-        <a href="/products" className='mx-5 fs-5'>Home</a>
+        <a href="/" className='mx-5 fs-5'>Home</a>
       </li>
       <li>
-        <a href="/products" className='mx-5 fs-5'>Products</a>
+        <a href="/product" className='mx-5 fs-5'>Products</a>
       </li>
       <li>
         <a href="/about" className='mx-5 fs-5'>About Us</a>
