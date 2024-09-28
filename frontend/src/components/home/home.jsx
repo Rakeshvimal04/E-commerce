@@ -96,12 +96,12 @@ function Home() {
       </div>
 
       <div>
-        <h1 className='mt-3 text-center '>Looking to paint your home? Ask for....</h1>
+        <h1 className='mt-5 text-center '>Looking to paint your home? Ask for....</h1>
         <div className='d-flex justify-content-center '>
           {/* <div className=' border  m-5'><a>Free Sample</a> </div>
           <div className='  border m-5'><a>Paint Review</a></div> */}
-            <div class="btn1 btn-4 mx-5">Free Sample</div>
-            <div class="btn1 btn-4 mx-5">Paint Review</div>
+            <div class="btn1 btn-4 mx-5 mt-5">Free Sample</div>
+            <div class="btn1 btn-4 mx-5 mt-5">Paint Review</div>
         </div>
       </div>
     </>

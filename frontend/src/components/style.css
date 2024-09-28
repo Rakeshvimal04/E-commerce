@@ -249,11 +249,16 @@ p:hover {
 
 /* footer--------------------------------------------------------------- */
 
+ul, li {
+  list-style: none;
+}
 
 .footer{
   background-color: #333;
   background-repeat: no-repeat;
   color: white;
+  padding-top: 120px;
+  padding-bottom: 20px;
 }
 .foosite{
   list-style: none;
@@ -261,10 +266,27 @@ p:hover {
   justify-content: space-between;
 }
 .foosite>li {
-  width: 250px;
+  width: 300px;
 }
 .Aboutcom ,a{
   text-decoration: none;
   color: white;
-
 }
+
+.sociallink{
+    padding: 0px !important;
+}
+
+
+.socialicons {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  /* color: #002fff; */
+  background-color: #2d31ff;
+  border-radius: 50px;
+  padding: 3px;
+  margin: 10px;
+}
+

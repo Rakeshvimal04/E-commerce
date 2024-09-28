@@ -40,20 +40,21 @@ function Header() {
   <div className="navbar-center">
     <ul className="nav-links">
       <li>
-        <a href="/products" className='mx-5 fs-3'>Home</a>
+        <a href="/products" className='mx-5 fs-5'>Home</a>
       </li>
       <li>
-        <a href="/products" className='mx-5 fs-3'>Products</a>
+        <a href="/products" className='mx-5 fs-5'>Products</a>
       </li>
       <li>
-        <a href="/about" className='mx-5 fs-3'>About Us</a>
+        <a href="/about" className='mx-5 fs-5'>About Us</a>
       </li>
       <li>
-        <a href="/contact" className='mx-5 fs-3'>Contact</a>
+        <a href="/contact" className='mx-5 fs-5'>Contact</a>
       </li>
     </ul>
   </div>
-  <div><a class="btn three" href="#">Learn More</a></div>
+  <div><a class="btn three" href="#"></a></div>
+
   {/* <div className="navbar-right">
     <a href="/cart" className="cart-icon">
       <i className="fas fa-shopping-cart"></i>
