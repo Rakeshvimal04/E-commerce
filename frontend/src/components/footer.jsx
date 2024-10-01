@@ -28,10 +28,10 @@ return(
                 </ul>
             </li>
             <li className="sitemap ">
-                <h4 className=''>Quick Links</h4>
+                <h4 className='text-center'>Quick Links</h4>
                 <ul className="Aboutcom">
                     {/* <li> <a href="">Company Profile</a></li> */}
-                    <li> <a href="">Find a Dealer</a></li>
+                    {/* <li> <a href="">Find a Dealer</a></li> */}
                     <li> <a href="">Request for Free Sampling</a> </li>
                     <li> <a href="">Request for Paint Preview</a></li>
                     <li> <a href="">Product Performance Warranty</a></li>

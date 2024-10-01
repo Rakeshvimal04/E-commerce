@@ -1,11 +1,18 @@
-import { useEffect, useRef, useState } from 'react';
-import '../style.css';
-import img1 from '../../assets/ipl_homepage.jpg';
-import img2 from '../../assets/new-banner1.jpg';
-import img3 from '../../assets/new-banner.jpg';
-import img4 from '../../assets/new-banner2.jpg';
-import img5 from '../../assets/new-banner3.jpg'
-import Product from './product';
+import { useEffect, useRef, useState } from "react";
+import { useNavigate } from 'react-router-dom';
+
+import "../style.css";
+import img1 from "../../assets/ipl_homepage.jpg";
+import img2 from "../../assets/new-banner1.jpg";
+import img3 from "../../assets/new-banner.jpg";
+import img4 from "../../assets/new-banner2.jpg";
+import img5 from "../../assets/new-banner3.jpg";
+import Product from "./product";
+import product1 from '../../assets/category1.jpg';
+import product2 from '../../assets/category.jpg';
+import product3 from '../../assets/pwood.jpg';
+import product4 from '../../assets/ewood.jpg';
+import product5 from '../../assets/special.jpg';
 
 function Home() {
   let [name, setName] = useState("");
@@ -25,7 +32,8 @@ function Home() {
     },
     {
       image: img5,
-    }]
+    },
+  ];
   const [current, setCurrent] = useState(0);
   const [autoPlay, setAutoPlay] = useState(true);
   let timeOut = null;
@@ -45,18 +53,30 @@ function Home() {
   const slideLeft = () => {
     setCurrent(current === 0 ? infoCarousel.length - 1 : current - 1);
   };
-  console.log(current);
+  // console.log(current);
+  let productlist=[
+    {id:1,Pname:"Wall Finish Interior",img:product1},
+    {id:2,Pname:"Wall Finish Exterior",img:product2},
+    {id:3,Pname:"Premium Wood Finish",img:product3},
+    {id:4,Pname:"Economy Wood Finish",img:product4},
+    {id:5,Pname:"special coating" ,img:product5}
+]
+const navigate = useNavigate();  
+const handleViewProduct = () => {
+    navigate('/productlist1');  
+  };
   return (
     <>
-   
-      <div className="carousel d-flex mt-3  mx-3"
+      <div
+        className="carousel d-flex mt-3  mx-3"
         onMouseEnter={() => {
           setAutoPlay(false);
           clearTimeout(timeOut);
         }}
         onMouseLeave={() => {
           setAutoPlay(true);
-        }}>
+        }}
+      >
         <div className="carousel_wrapper">
           {infoCarousel.map((image, index) => {
             return (
@@ -86,7 +106,9 @@ function Home() {
                 <div
                   key={index}
                   className={
-                    index == current ? "pagination_dot pagination_dot-active" : "pagination_dot"
+                    index == current
+                      ? "pagination_dot pagination_dot-active"
+                      : "pagination_dot"
                   }
                   onClick={() => setCurrent(index)}
                 ></div>
@@ -97,20 +119,43 @@ function Home() {
       </div>
 
       <div>
-        <h1 className='mt-5 text-center '>Looking to paint your home? Ask for....</h1>
-        <div className='d-flex justify-content-center '>
+        <h1 className="mt-5 text-center ">
+          Looking to paint your home? Ask for....
+        </h1>
+        <div className="d-flex justify-content-center ">
           {/* <div className=' border  m-5'><a>Free Sample</a> </div>
           <div className='  border m-5'><a>Paint Review</a></div> */}
-            <div class="btn1 btn-4 mx-5 mt-5">Free Sample</div>
-            <div class="btn1 btn-4 mx-5 mt-5">Paint Review</div>
+          <div class="btn1 btn-4 mx-5 mt-5">Free Sample</div>
+          <div class="btn1 btn-4 mx-5 mt-5">Paint Review</div>
         </div>
       </div>
-      <Product/>
+      {/* <Product /> */}
+      <div className=' d-flex justify-content-center mt-5'>
+        {
+            productlist.map((product)=>{
+                return(
+                    <>
+                    <div className='w-50 text-center product-card p-3'>
+                    <img src={product.img} alt='products' className='rounded mx-auto d-block w-75 h-75 product-image'/>
+                    <p className='text-center fw-medium '>{product.Pname}</p>
+                    <button className='btn btn-primary' onClick={handleViewProduct}> view Product</button>
+                    </div>
+                    </>
+                )
+            })
+        }
+    </div>
+      <div class="review col-12 col-lg-10 col-md-10 col-sm-8 d-flex justify-content-center align-items-center mx-5">
+        <div class="col-10 col-lg-12 col-md-10 col-sm-12 review-body mx-5">
+          {/* <iframe src="https://widgets.sociablekit.com/google-reviews/iframe/25397403" frameborder="0"></iframe>   */}
+          <iframe
+            src="https://widgets.sociablekit.com/google-reviews/iframe/25469789"
+            frameborder="0"></iframe>
+        </div>
+      </div>
+      
     </>
-  )
-
+  );
 }
 
 export default Home;
-
-

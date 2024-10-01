@@ -7,6 +7,7 @@ import Footer from './components/footer';
 import Product from './components/home/product';
 import Productlist1 from './components/products/productlist1';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Gallery from './components/products/gallery';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Route path="/" element={<Home/>} />  {/* Default path renders Product */}
         <Route path="/product" element={<Product />} /> {/* Clicking "View Product" takes user to Page */}
         <Route path="/productlist1" element={<Productlist1/>} /> 
-
+        <Route path="/gallery" element={<Gallery/>} /> 
       </Routes>
     </Router>
       <Footer/>
