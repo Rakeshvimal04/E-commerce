@@ -4,6 +4,7 @@ import product11 from './images/p11.png'
 import product12 from './images/p12.png'
 import product13 from './images/p13.png'
 import product14 from './images/p14.png'
+import { Container, Row, Col } from 'react-bootstrap';
 
 import aquaname from './images/Aquafresh_Wall-Primer-wh.png'
 import altura from './images/altura-wall-primer.png'
@@ -12,6 +13,7 @@ import wallInterior from './images/Wall-Primer_Int.png'
 
 // product png 
 import aquafreshp from './images/Aquafresh_Wall-Primer-prod.png'
+
 
 
 function Productlist1() {
@@ -43,7 +45,7 @@ function Productlist1() {
             <div className='  productlisttop'>
               <img src={aquafreshp} className=' itemimage' />
               <p className=''>Pack Sizes</p>
-              <p></p>
+              <p>1 Ltr,4 Ltrs,10 Ltrs and 20 Ltrs</p>
 
               <div>
                 <div >
@@ -98,6 +100,27 @@ function Productlist1() {
         {selectedImage === 2 && <div className='productdetails text-center p-2  '>
           <img src={wallExterior} className='my-3' width="250px" />
           <h5 className=' text-center text-white m-3 text-justify'>ECONOMICAL WATER BASED WALL PRIMER PAINT<br />FOR INTERIORS</h5>
+          <Row className="mb-3">
+        <Col md={4}>
+          <div className="p-3 bg-light border">Column 1</div>
+        </Col>
+        <Col md={4}>
+          <div className="p-3 bg-light border">Column 2</div>
+        </Col>
+        <Col md={4}>
+          <div className="p-3 bg-light border">Column 3</div>
+        </Col>
+      </Row>
+
+      {/* Second Row: 2 Columns */}
+      <Row>
+        <Col md={6}>
+          <div className="p-3 bg-light border">Column 1</div>
+        </Col>
+        <Col md={6}>
+          <div className="p-3 bg-light border">Column 2</div>
+        </Col>
+      </Row>
         </div>}
         {selectedImage === 3 && <div className='productdetails text-center p-2  '>
           <img src={wallInterior} className='my-3' width="250px" />
