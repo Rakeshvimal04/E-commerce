@@ -1,7 +1,12 @@
+*{
+  /* padding: 5px; */
+}
+
 /* .navbar {
   background-color: #222831;
   color: white;
 }
+
 
 .logoname {
   font-family: "Fascinate Inline", system-ui;
@@ -144,8 +149,8 @@ p:hover {
 
 
 .carousel {
-  height: 600px;
-  width: 100%;
+  height: 500px;
+  width: 98%;
 }
 
 .carousel_wrapper {
@@ -243,9 +248,14 @@ p:hover {
 }
 
 .pagination_dot-active {
-  background-color: steelblue;
+  background-color: rgb(255, 0, 0);
 }
 
+
+/* product  */
+.product-card{
+  height: 300px;
+}
 
 /* footer--------------------------------------------------------------- */
 
