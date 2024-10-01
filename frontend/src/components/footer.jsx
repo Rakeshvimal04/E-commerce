@@ -1,4 +1,4 @@
-import logo from '../assets/logo.png'
+import logo from '../assets/kgk.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';    
 import { faFacebookF ,faInstagram ,faTwitter} from '@fortawesome/free-brands-svg-icons';
 import './style.css'
@@ -12,10 +12,10 @@ return(
         <ul class="foosite clearfix">
             <li class="sitemap">
                 <a href="">
-                    <img class="responsive" src={logo} alt=""/>
+                    <img class="responsive" src={logo} alt="" className='w-50'/>
                 </a>
-                <h5>follow us</h5>
-                <ul className="sociallink d-flex">
+                <h5 className='mx-5'>follow us</h5>
+                <ul className="sociallink d-flex ">
                     <li className='socialicons'> 
                     <FontAwesomeIcon icon={faFacebookF}/>
                     </li >
@@ -27,7 +27,7 @@ return(
                     </li>
                 </ul>
             </li>
-            <li className="sitemap">
+            <li className="sitemap ">
                 <h4 className=''>Quick Links</h4>
                 <ul className="Aboutcom">
                     {/* <li> <a href="">Company Profile</a></li> */}

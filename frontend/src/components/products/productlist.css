@@ -22,3 +22,10 @@
 .productdetails{
     background-color: #3d53a3  !important;
 }
+
+.itemimage{
+    width: 300px;
+    /* padding-right: 50px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black; */
+}

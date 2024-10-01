@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/logo.png'
+import logo from '../assets/kgk.png'
 import './style.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';function Header() {
   return (
@@ -35,7 +35,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';functi
 
 <nav className="navbar">
   <div className="navbar-left">
-  <img src={logo} className=' mx-5 my-1 ' />
+  <img src={logo} className=' mx-5 my-1 w-50 ' />
     </div>
   <div className="navbar-center">
     <ul className="nav-links">
@@ -44,6 +44,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';functi
       </li>
       <li>
         <a href="/product" className='mx-5 fs-5'>Products</a>
+      </li>
+      <li>
+        <a href="/gallery" className='mx-5 fs-5'>Gallery</a>
       </li>
       <li>
         <a href="/about" className='mx-5 fs-5'>About Us</a>
