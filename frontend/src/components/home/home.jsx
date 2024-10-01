@@ -49,7 +49,7 @@ function Home() {
   return (
     <>
    
-      <div className="carousel d-flex mt-3"
+      <div className="carousel d-flex mt-3  mx-3"
         onMouseEnter={() => {
           setAutoPlay(false);
           clearTimeout(timeOut);

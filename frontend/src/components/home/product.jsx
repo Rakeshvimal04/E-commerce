@@ -28,10 +28,10 @@ const Product = () => {
             productlist.map((product)=>{
                 return(
                     <>
-                    <div className='w-50 text-center product-card'>
+                    <div className='w-50 text-center product-card p-3'>
                     <img src={product.img} alt='products' className='rounded mx-auto d-block w-75 h-75 product-image'/>
-                    <p className='text-center fw-medium m-2'>{product.Pname}</p>
-                    <button className='btn btn-primary p-2 mb-2' onClick={handleViewProduct}> view Product</button>
+                    <p className='text-center fw-medium '>{product.Pname}</p>
+                    <button className='btn btn-primary' onClick={handleViewProduct}> view Product</button>
                     </div>
                     </>
                 )
