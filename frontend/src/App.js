@@ -14,10 +14,9 @@ import ContactUs from './components/contactus';
 function App() {
   return (
     <div className="App">
-    
+      <Header/>
       <Router basename="/E-commerce">
       <Routes>
-      <Header/>
       <Route path="/E-commerce" element={<Home/>} /> 
         <Route path="/" element={<Home/>} />  
         <Route path="/product" element={<Product />} /> 
