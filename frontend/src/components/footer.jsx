@@ -39,12 +39,12 @@ return(
                 </ul>
             </li>
             <li className="sitemap">
-                <h4 className="fomrfc ">MRF Corp Limited</h4>
+                <h4 className="">KGK MRF Paints</h4>
                 <p>LIG-523, New, Rayakottah Housing Board, Hosur, Tamil Nadu 635109</p>
-                <a className="call-foo" href="tel:9597417885"> <span>Phone:</span> +91 9597417885</a><br/>
-                <a className="call-foo" href="mailto:kgkpaints@gmail.com"> <span>E-Mail:</span> Kgkpaints@gmail.com</a><br/>
-                <a className="call-foo" href="javascript:void(0);"> <span>CIN:</span> U65929TN1985PLC012156</a>
-                <a className="call-foo" href="javascript:void(0);"> <span>GST:</span> 33AAACM2185R1Z4</a>
+                <a  href="tel:9597417885"> <span>Phone:</span> +91 9597417885</a><br/>
+                <a  href="mailto:kgkpaints@gmail.com"> <span>E-Mail:</span> Kgkpaints@gmail.com</a><br/>
+                <a  href="javascript:void(0);"> <span>CIN:</span> U65929TN1985PLC012156</a>
+                <a  href="javascript:void(0);"> <span>GST:</span> 33AAACM2185R1Z4</a>
             </li>
 
             <li className="sitemap">

@@ -1,18 +1,18 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from 'react-router-dom';
 
-import "../style.css";
-import img1 from "../../assets/ipl_homepage.jpg";
-import img2 from "../../assets/new-banner1.jpg";
-import img3 from "../../assets/new-banner.jpg";
-import img4 from "../../assets/new-banner2.jpg";
-import img5 from "../../assets/new-banner3.jpg";
+import "./style.css";
+import img1 from "../assets/ipl_homepage.jpg";
+import img2 from "../assets/new-banner1.jpg";
+import img3 from "../assets/new-banner.jpg";
+import img4 from "../assets/new-banner2.jpg";
+import img5 from "../assets/new-banner3.jpg";
 import Product from "./product";
-import product1 from '../../assets/category1.jpg';
-import product2 from '../../assets/category.jpg';
-import product3 from '../../assets/pwood.jpg';
-import product4 from '../../assets/ewood.jpg';
-import product5 from '../../assets/special.jpg';
+import product1 from '../assets/category1.jpg';
+import product2 from '../assets/category.jpg';
+import product3 from '../assets/pwood.jpg';
+import product4 from '../assets/ewood.jpg';
+import product5 from '../assets/special.jpg';
 
 function Home() {
   let [name, setName] = useState("");

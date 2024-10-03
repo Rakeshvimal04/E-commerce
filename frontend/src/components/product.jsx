@@ -1,12 +1,12 @@
 import React from 'react';
-import product1 from '../../assets/category1.jpg';
-import product2 from '../../assets/category.jpg';
-import product3 from '../../assets/pwood.jpg';
-import product4 from '../../assets/ewood.jpg';
-import product5 from '../../assets/special.jpg';
-import '../style.css'
+import product1 from '../assets/category1.jpg';
+import product2 from '../assets/category.jpg';
+import product3 from '../assets/pwood.jpg';
+import product4 from '../assets/ewood.jpg';
+import product5 from '../assets/special.jpg';
+import './style.css'
 import { useNavigate } from 'react-router-dom';
-import mrf from '../../assets/rightproduct-2.jpg'
+import mrf from '../assets/rightproduct-2.jpg'
 
 
 
@@ -27,7 +27,7 @@ const Product = () => {
     <>
     <div className="container mt-5">
     <section className="text-center bg-warning text-dark p-5 rounded">
-      <h1 className="display-4">MRF Vapcour Paints</h1>
+      <h1 className="display-4">KGK (MRF Vapcour) Paints</h1>
       <p className="lead">High-quality paints with superior coverage and long-lasting finish.</p>
       <a href="/productlist1" className="btn btn-primary btn-lg mt-3">Buy Now</a>
     </section>
