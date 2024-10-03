@@ -71,6 +71,7 @@ const handleViewProduct = () => {
   }
   return (
     <>
+    
       <div
         className="carousel d-flex mt-3  mx-3"
         onMouseEnter={() => {
@@ -155,9 +156,7 @@ const handleViewProduct = () => {
             src="https://widgets.sociablekit.com/google-reviews/iframe/25469789"
             frameborder="0"></iframe>
         </div>
-      </div>
-      <button onClick={handlecontactuspage}>contactus</button>
-      
+      </div>      
     </>
   );
 }
