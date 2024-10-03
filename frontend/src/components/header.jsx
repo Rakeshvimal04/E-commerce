@@ -26,19 +26,19 @@ function Header() {
     <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul className="navbar-nav ">
         <li className="nav-item">
-          <a className="nav-link mx-5 fs-5 text-white" href="/">Home</a>
+          <a className="nav-link mx-5 fs-5 text-white" href="/E-commerce">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link mx-5 fs-5 text-white" href="/product">Products</a>
+          <a className="nav-link mx-5 fs-5 text-white" href="/E-commerce/product">Products</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link mx-5 fs-5 text-white" href="/gallery">Gallery</a>
+          <a className="nav-link mx-5 fs-5 text-white" href="/E-commerce/gallery">Gallery</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link mx-5 fs-5 text-white" href="/about">About Us</a>
+          <a className="nav-link mx-5 fs-5 text-white" href="/E-commerce/about">About Us</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link mx-5 fs-5 text-white" href="/contact">Contact</a>
+          <a className="nav-link mx-5 fs-5 text-white" href="/E-commerce/contact">Contact</a>
         </li>
       </ul>
     </div>
