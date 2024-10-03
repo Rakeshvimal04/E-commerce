@@ -54,7 +54,6 @@ function Aboutus(){
           </div>
         </div>
       </section>
-{/* owners info given */}
       <section className="team mt-5">
         <h2>Meet Our Founder</h2>
         <div className="row text-center">

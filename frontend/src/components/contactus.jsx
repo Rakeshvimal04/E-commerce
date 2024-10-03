@@ -29,7 +29,6 @@ const ContactUs = () => {
           </div>
         </div>
 
-        {/* Contact Form Section */}
         <div className="col-md-6">
           <h2>Get in Touch</h2>
           <form >
