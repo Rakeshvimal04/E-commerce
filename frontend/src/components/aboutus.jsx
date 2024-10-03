@@ -42,7 +42,7 @@ function Aboutus(){
           </div>
           <div className="col-md-4">
             <div className="card p-4">
-              <h5>2019</h5>
+              <h5>2019 </h5>
               <p>Expanded into international markets, delivering high-quality paint solutions worldwide.</p>
             </div>
           </div>
