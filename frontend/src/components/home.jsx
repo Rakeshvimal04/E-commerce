@@ -126,7 +126,7 @@ const handleViewProduct = () => {
           {/* <div className=' border  m-5'><a>Free Sample</a> </div>
           <div className='  border m-5'><a>Paint Review</a></div> */}
           <div class="btn1 btn-4 mx-5 mt-5">Free Sample</div>
-          <div class="btn1 btn-4 mx-5 mt-5">Paint Review</div>
+          <div class="btn1 btn-4 mx-5 mt-5 "><a href="#reviews" className="text-dark">Paint Review</a></div>
         </div>
       </div>
       {/* <Product /> */}
@@ -145,9 +145,8 @@ const handleViewProduct = () => {
             })
         }
     </div>
-      <div class="review col-12 col-lg-10 col-md-10 col-sm-8 d-flex justify-content-center align-items-center mx-5">
-        <div class="col-10 col-lg-12 col-md-10 col-sm-12 review-body mx-5">
-          {/* <iframe src="https://widgets.sociablekit.com/google-reviews/iframe/25397403" frameborder="0"></iframe>   */}
+      <div className="review col-12 col-lg-10 col-md-10 col-sm-8 d-flex justify-content-center align-items-center mx-5" id="reviews">
+        <div className="col-10 col-lg-12 col-md-10 col-sm-12 review-body mx-5">
           <iframe
             src="https://widgets.sociablekit.com/google-reviews/iframe/25469789"
             frameborder="0"></iframe>
