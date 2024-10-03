@@ -65,6 +65,10 @@ const navigate = useNavigate();
 const handleViewProduct = () => {
     navigate('/productlist1');  
   };
+
+  const handlecontactuspage=()=>{
+       navigate('/contact');
+  }
   return (
     <>
       <div
@@ -152,6 +156,7 @@ const handleViewProduct = () => {
             frameborder="0"></iframe>
         </div>
       </div>
+      <button onClick={handlecontactuspage}>contactus</button>
       
     </>
   );
