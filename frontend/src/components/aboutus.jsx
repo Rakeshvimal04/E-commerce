@@ -18,7 +18,7 @@ function Aboutus(){
           <div className="col-md-6">
             <h2>Our Mission</h2>
             <p className="lead">
-              At MRF Vapcour, we are committed to providing the highest quality paints and coatings 
+              At KGK MRF Vapcour, we are committed to providing the highest quality paints and coatings 
               that enhance and protect your spaces. Our mission is to innovate with sustainable, 
               eco-friendly solutions while ensuring superior durability, vibrant colors, and long-lasting performance.
             </p>
