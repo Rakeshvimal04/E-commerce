@@ -77,7 +77,7 @@ const handleViewProduct = () => {
   };
   return (
     <>
-    <nav className="navbar navbar-expand-md bg-dark text-white">
+    {/* <nav className="navbar navbar-expand-md bg-dark text-white">
   <div className="container-fluid">
     <div className="navbar-left">
       <a href="/">
@@ -117,7 +117,7 @@ const handleViewProduct = () => {
       </ul>
     </div>
   </div>
-</nav>
+</nav> */}
 
       <div
         className="carousel d-flex mt-3  mx-3"
