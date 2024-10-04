@@ -65,10 +65,16 @@ const navigate = useNavigate();
 const handleViewProduct = () => {
     navigate('/productlist1');  
   };
-
-  const handlecontactuspage=()=>{
-       navigate('/contact');
-  }
+  // added for testing purpose
+  const viewabout = () => {
+    navigate('/about');  
+  };const viewcontact = () => {
+    navigate('/contact');  
+  };const viewproduct = () => {
+    navigate('/product');  
+  };const viewgallery = () => {
+    navigate('/gallery');  
+  };
   return (
     <>
     
@@ -157,6 +163,11 @@ const handleViewProduct = () => {
             frameborder="0"></iframe>
         </div>
       </div>      
+      <button onClick={viewabout}>about</button>
+      <button onClick={viewcontact}>contact</button>
+      <button onClick={viewgallery}>gallery</button>
+      <button onClick={viewproduct}>product</button>
+
     </>
   );
 }
