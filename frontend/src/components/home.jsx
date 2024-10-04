@@ -112,7 +112,7 @@ const handleViewProduct = () => {
           <a className="nav-link mx-5 fs-5 text-white" onClick={viewabout}>About Us</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link mx-5 fs-5 text-white" onClick={viewcontact} href="/contact">Contact</a>
+          <a className="nav-link mx-5 fs-5 text-white" onClick={viewcontact} >Contact</a>
         </li>
       </ul>
     </div>
