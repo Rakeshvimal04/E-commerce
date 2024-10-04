@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from 'react-router-dom';
-
+import logo from '../assets/kgk.png'
 import "./style.css";
 import img1 from "../assets/ipl_homepage.jpg";
 import img2 from "../assets/new-banner1.jpg";
@@ -77,7 +77,48 @@ const handleViewProduct = () => {
   };
   return (
     <>
-    
+    <nav className="navbar navbar-expand-md bg-dark text-white">
+  <div className="container-fluid">
+    <div className="navbar-left">
+      <a href="/">
+        <img src={logo} className="mx-5 my-1 w-50" alt="Logo" />
+      </a>
+    </div>
+
+    <button
+      className="navbar-toggler bg-light"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span className="navbar-toggler-icon"></span>
+    </button>
+
+    <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul className="navbar-nav ">
+        <li className="nav-item">
+          <a className="nav-link mx-5 fs-5 text-white" href="/E-commerce/">Home</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link mx-5 fs-5 text-white"onClick={viewproduct}>Products</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link mx-5 fs-5 text-white" onClick={viewgallery}>Gallery</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link mx-5 fs-5 text-white" onClick={viewabout}>About Us</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link mx-5 fs-5 text-white" onClick={viewcontact} href="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
       <div
         className="carousel d-flex mt-3  mx-3"
         onMouseEnter={() => {
@@ -163,10 +204,10 @@ const handleViewProduct = () => {
             frameborder="0"></iframe>
         </div>
       </div>      
-      <button onClick={viewabout}>about</button>
+      {/* <button onClick={viewabout}>about</button>
       <button onClick={viewcontact}>contact</button>
       <button onClick={viewgallery}>gallery</button>
-      <button onClick={viewproduct}>product</button>
+      <button onClick={viewproduct}>product</button> */}
 
     </>
   );
