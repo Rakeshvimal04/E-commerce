@@ -29,7 +29,7 @@ const Product = () => {
     <section className="text-center bg-warning text-dark p-5 rounded">
       <h1 className="display-4">KGK (MRF Vapcour) Paints</h1>
       <p className="lead">High-quality paints with superior coverage and long-lasting finish.</p>
-      <a href="/productlist1" className="btn btn-primary btn-lg mt-3">Buy Now</a>
+      <a href="/E-commerce/productlist1" className="btn btn-primary btn-lg mt-3">Buy Now</a>
     </section>
 
     <section className="mt-5">

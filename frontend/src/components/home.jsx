@@ -66,59 +66,17 @@ const handleViewProduct = () => {
     navigate('/productlist1');  
   };
   // added for testing purpose
-  const viewabout = () => {
-    navigate('/about');  
-  };const viewcontact = () => {
-    navigate('/contact');  
-  };const viewproduct = () => {
-    navigate('/product');  
-  };const viewgallery = () => {
-    navigate('/gallery');  
-  };
+  // const viewabout = () => {
+  //   navigate('/about');  
+  // };const viewcontact = () => {
+  //   navigate('/contact');  
+  // };const viewproduct = () => {
+  //   navigate('/product');  
+  // };const viewgallery = () => {
+  //   navigate('/gallery');  
+  // };
   return (
     <>
-    {/* <nav className="navbar navbar-expand-md bg-dark text-white">
-  <div className="container-fluid">
-    <div className="navbar-left">
-      <a href="/">
-        <img src={logo} className="mx-5 my-1 w-50" alt="Logo" />
-      </a>
-    </div>
-
-    <button
-      className="navbar-toggler bg-light"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span className="navbar-toggler-icon"></span>
-    </button>
-
-    <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul className="navbar-nav ">
-        <li className="nav-item">
-          <a className="nav-link mx-5 fs-5 text-white" href="/E-commerce/">Home</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link mx-5 fs-5 text-white"onClick={viewproduct}>Products</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link mx-5 fs-5 text-white" onClick={viewgallery}>Gallery</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link mx-5 fs-5 text-white" onClick={viewabout}>About Us</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link mx-5 fs-5 text-white" onClick={viewcontact} >Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav> */}
-
       <div
         className="carousel d-flex mt-3  mx-3"
         onMouseEnter={() => {
